@@ -1,0 +1,18 @@
+---
+title: Cargo Sped
+layout: layout
+body_class: index
+---
+
+- content_for :description do
+  = I18n.t('page.description')
+
+- content_for :keywords do
+  = I18n.t('page.keywords')
+
+= partial 'partials/header'
+
+%main{role: 'main'}
+  = partial 'pages/about'
+
+= partial 'partials/footer'

@@ -1,0 +1,19 @@
+!!! 5
+%html
+  %head
+    %meta{charset: "utf-8"}
+    %title= current_page.data.title
+    %meta{"http-equiv" => "X-UA-Compatible", content: "IE-edge,chrome=1"}
+    %meta{name: 'keywords', content: (yield_content(:keywords) || current_page.data.keywords)}
+    %meta{name: 'description', content: (yield_content(:description) || current_page.data.description)}
+    %meta{name: 'viewport', content: 'width=device-width, initial-scale=1.0, user-scalable=no'}
+
+    %link{rel: 'icon', href: 'images/favicon.png'}
+    
+    = stylesheet_link_tag 'styles'
+    = yield_content :stylesheets
+    = yield_content :javascripts
+
+  %body{class: page_classes}
+    = yield
+    = javascript_include_tag 'app'
