@@ -9,7 +9,7 @@ gem 'wdm', '~> 0.1.0', platforms: [:mswin, :mingw]
 gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 
 # Middleman Gems
-gem 'middleman',            '>= 4.0.0'
+gem 'middleman',            '>= 4.1.0.rc.2'
 gem 'middleman-compass',    '>= 4.0.0'
 gem 'middleman-sprockets',  '~> 4.0.0.rc'
 gem 'middleman-livereload', '~> 3.4.6'
